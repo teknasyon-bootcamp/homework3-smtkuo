@@ -61,7 +61,7 @@ class Form
 	foreach ($this->fields as $field) { 
 	?>
 	<!-- Fields dizisini Foreach döngüsü ile ekrana yazdırma -->
-	<label for='<?= $field["1"] ?>'><?= $field["0"] ?> </label> <input type='text' name='<?= $field["1"] ?>' value='<?= $field["2"] ?>' />
+	<label for='<?= $field[1] ?>'><?= $field[0] ?> </label> <input type='text' name='<?= $field[1] ?>' value='<?= $field[2] ?>' />
 	<?php 
 	}
 	echo "<button type='submit'>Gönder</button>"; 
