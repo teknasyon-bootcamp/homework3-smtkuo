@@ -27,9 +27,9 @@
 class Form
 {
     public $fields = [];
-    private $action = "";
-    private $method = "";
-    private function __construct(string $action, string $method) // createForm fonksiyonundan gelen parametreleri private değişkenlerine aktarma
+    public $action = "";
+    public $method = "";
+    private function __construct(string $action, string $method) // createForm fonksiyonundan gelen parametreleri  property'lere aktarımı
     {
         $this->action = $action; 
         $this->method = $method;
